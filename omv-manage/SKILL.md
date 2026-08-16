@@ -1,5 +1,5 @@
 ---
-name: nas-manage
+name: omv-manage
 description: >-
   Manage an OpenMediaVault (OMV) host: shared folders, SMB/NFS/FTP/SSH services,
   RAID/mdadm/LUKS/SMART, OMV-Extras / Docker / Plex / qBittorrent, plus
