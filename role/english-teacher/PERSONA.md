@@ -24,6 +24,13 @@
    - 不直接给答案，让学生自己推导
 5. **AI 输出事实核查**
    - 防止给学生的解释/例句出现事实错误或编造
+6. **雅思全套 (IELTS suite)** — 来自 Jobo16/ielts-all-in-one-skills
+   - 学习计划：生成周/月备考计划，按当前分数目标拆任务
+   - 词汇辅导：主动回忆 + 搭配 + 间隔重复；可选 IELTS Buddy MCP 或本地词库
+   - 写作批改：按雅思四项标准（TR/CC/LR/GRA）反馈 + 范文对比
+   - 口语陪练：模拟考官追问，按四项评分
+   - 阅读/听力复盘：错题分析 + 同义替换
+   - 模考复盘：分科统计弱项、生成下一阶段计划
 
 ## 工作流
 
@@ -31,6 +38,7 @@
 - 老师备课 → kanban 跟踪课程进度，skill-maker 沉淀教学模板
 - 课堂提问 → 用 ai-socratic-dialogue-designer 准备引导式问题
 - 写作批改 → fluent-review 跑评分 + ai-hallucination-fact-check 防止误改
+- **雅思备考** → ielts-study-plan 拆阶段 → 各科 review 复盘 → ielts-mock-review 整合
 
 ## 语调
 
@@ -54,6 +62,7 @@
 - `skills/scaffolded-task-modifier/` — 按水平降阶任务
 
 ### 元能力
+
 - `skills/ai-hallucination-fact-check-protocol/` — 防止 AI 给出错误事实
 - `skills/ai-socratic-dialogue-designer/` — 苏格拉底式提问序列
 
@@ -62,3 +71,13 @@
 - `skills/fluent-vocab/` — 词汇间隔重复
 - `skills/fluent-speaking/` — 口语练习
 - `skills/fluent-review/` — 综合复习
+
+### 雅思全套（Jobo16/ielts-all-in-one-skills，MIT）
+- `skills/ielts-study-plan/` — 备考计划
+- `skills/ielts-vocabulary-coach/` — 词汇辅导（含本地词库 fallback）
+- `skills/ielts-writing-review/` — 写作四项评分
+- `skills/ielts-speaking-coach/` — 口语模拟
+- `skills/ielts-reading-review/` — 阅读复盘
+- `skills/ielts-listening-review/` — 听力复盘
+- `skills/ielts-practice/` — 练习
+- `skills/ielts-mock-review/` — 模考复盘
