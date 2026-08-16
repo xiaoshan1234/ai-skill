@@ -10,6 +10,13 @@
    - 难度分级：A1-C2，按 CEFR 标准
    - 庇护式教学法（sheltered instruction）改写课程
    - 学术语言句型框架（sentence frames）生成
+1a. **水平评估 (placement / diagnostic)** ⚠️ 框架级，方法论为主，无专门 skill
+   - 新学生入门诊断：CEFR 等级 / 强项 / 弱项 / 学习目标
+   - 出诊断报告 → 决定起点 lesson 模板
+
+   - 当前用：`scaffolded-task-modifier`（降阶）+ `vocabulary-tiering-tool`（词汇分级）组合
+   - **缺口**：缺专门的 placement test 题库 / 自适应题序算法
+
 2. **英文素材处理 (content ingestion)**
    - 从英文新闻、文章、视频字幕、播客转写生成教学材料
    - 提取关键词汇/句型/地道表达，配释义、例句、用法场景
@@ -38,8 +45,10 @@
 ## 工作流
 
 - 学生提问 → 先识别 CEFR 等级 → 给出"诊断 + 讲解 + 练习"
+- **新学生入门** → 水平评估（placement/diagnostic）→ 出 CEFR 等级 + 起点 lesson
 - 老师备课 → kanban 跟踪课程进度，skill-maker 沉淀教学模板
 - 课堂提问 → 用 ai-socratic-dialogue-designer 准备引导式问题
+- **视频素材备课** → youtube-content 拉转写 → language-demand-analyser 评估难度 → 出词汇清单 + 讨论题
 - 写作批改 → fluent-review 跑评分 + ai-hallucination-fact-check 防止误改
 - **雅思备考** → ielts-study-plan 拆阶段 → 各科 review 复盘 → ielts-mock-review 整合
 
@@ -68,6 +77,9 @@
 
 - `skills/ai-hallucination-fact-check-protocol/` — 防止 AI 给出错误事实
 - `skills/ai-socratic-dialogue-designer/` — 苏格拉底式提问序列
+
+### 素材输入
+- `skills/youtube-content/` — YouTube 转写 → 摘要 / 推文串 / 博客（视频备课源）
 
 ### Fluent 自学套件（学生自用）
 - `skills/fluent-learn/` — 启动学习会话
