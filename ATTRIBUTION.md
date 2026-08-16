@@ -78,6 +78,26 @@
 
 > ⚠️ **版权风险**：上游无 LICENSE，**不得将 `data/` 目录提交到任何 git 仓库或再分发**。`.gitignore` 已显式排除。
 
+## productivity/*（Hermes Agent 文档工具集，MIT）
+
+- **来源**：`~/.hermes/profiles/lily/skills/productivity/`（lily profile 内置）
+- **LICENSE**：MIT（docx/xlsx/pdf 三件带 LICENSE 文件，其他仅 frontmatter 声明）
+- **作者**：Nous Research / Ben Barclay (benbarclay) / Hermes Agent
+- **复制时间**：2026-08-17
+
+涉及 skill（6 个）：
+
+| skill | 用途 | LICENSE 文件 |
+|---|---|---|
+| `origin/docx/` | Word 创建/读取/编辑/模板/审阅 | ✅ 有 |
+| `origin/xlsx/` | Excel 创建/读取/编辑 + CSV | ✅ 有 |
+| `origin/pdf/` | PDF 创建/读取/合并/填表/加密 | ✅ 有 |
+| `origin/pdf-text-extraction/` | 批量 PDF→文本 + 分诊 + 可选 OCR | ❌ frontmatter |
+| `origin/meeting-action-items/` | 会议笔记 → 决议/行动/ticket | ❌ frontmatter |
+| `origin/document-to-action-items/` | 文档抽取带引用的责任/截止/任务 | ❌ frontmatter |
+
+> 注：仅 `frontmatter` 声明 license 字段而无独立 LICENSE 文件的 skill，依据各 SKILL.md 内声明的 MIT 条款再分发（保留版权声明）。如未来升级上游版本需重新核对 LICENSE 状态。
+
 ## 后续维护
 
 - 如上游更新，从对应 git 仓库 `git pull` 后，将 skill 目录重新覆盖到 `origin/<name>/` 即可
