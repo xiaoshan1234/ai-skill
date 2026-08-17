@@ -98,6 +98,56 @@
 
 > 注：仅 `frontmatter` 声明 license 字段而无独立 LICENSE 文件的 skill，依据各 SKILL.md 内声明的 MIT 条款再分发（保留版权声明）。如未来升级上游版本需重新核对 LICENSE 状态。
 
+## amg profile A 股炒股 skill（Apache-2.0）
+
+- **来源**：`xp.xiaoshan12138.top`（SSH `loner@xp.xiaoshan12138.top`，profile `~/.hermes/profiles/amg/skills/`）
+- **LICENSE**：Apache-2.0（15 个有独立 LICENSE.txt；1 个**无 LICENSE**：`stock-watcher`）
+- **作者**：amg profile 上游贡献者
+- **复制时间**：2026-08-17
+
+涉及 skill（16 个）：
+
+| skill | 用途 | LICENSE |
+|---|---|---|
+| `origin/findata-toolkit-cn/` | A 股金融数据工具包（实时行情、财务、宏观） | ✅ Apache-2.0 |
+| `origin/financial-statement-analyzer/` | 单公司财报深度分析 | ✅ Apache-2.0 |
+| `origin/undervalued-stock-screener/` | 低估值股票筛选 | ✅ Apache-2.0 |
+| `origin/portfolio-health-check/` | 组合诊断 | ✅ Apache-2.0 |
+| `origin/high-dividend-strategy/` | A 股高股息策略 | ✅ Apache-2.0 |
+| `origin/insider-trading-analyzer/` | A 股董监高增减持 | ✅ Apache-2.0 |
+| `origin/esg-screener/` | ESG 评分 | ✅ Apache-2.0 |
+| `origin/event-driven-detector/` | 事件驱动（并购/重组/回购） | ✅ Apache-2.0 |
+| `origin/quant-factor-screener/` | 多因子筛选 | ✅ Apache-2.0 |
+| `origin/risk-adjusted-return-optimizer/` | 风险调整后收益组合 | ✅ Apache-2.0 |
+| `origin/sector-rotation-detector/` | 行业轮动 | ✅ Apache-2.0 |
+| `origin/sentiment-reality-gap/` | 逆向投资 | ✅ Apache-2.0 |
+| `origin/small-cap-growth-identifier/` | 小盘成长 | ✅ Apache-2.0 |
+| `origin/suitability-report-generator/` | 适当性报告 | ✅ Apache-2.0 |
+| `origin/tech-hype-vs-fundamentals/` | 科技股估值 vs 基本面 | ✅ Apache-2.0 |
+| `origin/stock-watcher/` | 自选股行情（10jqka 同花顺） | ❌ **无 LICENSE，本地使用** |
+
+> ⚠️ **stock-watcher 无 LICENSE**：已复制到本地 `origin/stock-watcher/`（仅本机使用），但**已加入 `.gitignore` 排除**，不 commit 到 git 仓库。
+
+## InvestSkill（美股分析，MIT）
+
+- **来源**：`https://github.com/yennanliu/InvestSkill`
+- **LICENSE**：MIT
+- **作者**：yennanliu
+- **复制时间**：2026-08-17
+
+涉及 skill（6 个）：
+
+| skill | 用途 |
+|---|---|
+| `origin/fundamental-analysis/` | 美股基本面分析 |
+| `origin/dcf-valuation/` | DCF 估值 + 敏感度 |
+| `origin/earnings-call-analysis/` | 财报电话会议情绪/管理层语气 |
+| `origin/stock-eval/` | 美股综合评估 |
+| `origin/technical-analysis/` | 技术分析 |
+| `origin/insider-trading/` | 美股 SEC Form 4 内部人交易 |
+
+> 与 amg profile 的 `insider-trading-analyzer`（A 股董监高）功能互补——前者 A 股、后者美股。
+
 ## 后续维护
 
 - 如上游更新，从对应 git 仓库 `git pull` 后，将 skill 目录重新覆盖到 `origin/<name>/` 即可
