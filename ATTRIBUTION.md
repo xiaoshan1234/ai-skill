@@ -124,9 +124,9 @@
 | `origin/small-cap-growth-identifier/` | 小盘成长 | ✅ Apache-2.0 |
 | `origin/suitability-report-generator/` | 适当性报告 | ✅ Apache-2.0 |
 | `origin/tech-hype-vs-fundamentals/` | 科技股估值 vs 基本面 | ✅ Apache-2.0 |
-| `origin/stock-watcher/` | 自选股行情（10jqka 同花顺） | ❌ **无 LICENSE，本地使用** |
+| `origin/stock-watcher/` | 自选股行情（10jqka 同花顺） | ❌ **无 LICENSE** |
 
-> ⚠️ **stock-watcher 无 LICENSE**：已复制到本地 `origin/stock-watcher/`（仅本机使用），但**已加入 `.gitignore` 排除**，不 commit 到 git 仓库。
+> ⚠️ **stock-watcher 无 LICENSE**：来源未提供 LICENSE 文件。用户选择不单独处理（仓库整体知名度低，版权问题后期统一处理），已加进 git 仓库。
 
 ## InvestSkill（美股分析，MIT）
 

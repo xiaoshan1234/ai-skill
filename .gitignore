@@ -1,6 +1,3 @@
 
 # 词库数据（上游无 LICENSE，本地使用不进 git）
 origin/ielts-vocabulary-coach/data/
-
-# stock-watcher（上游无 LICENSE，本地使用不进 git）
-origin/stock-watcher/
