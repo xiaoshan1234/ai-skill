@@ -148,6 +148,19 @@
 
 > 与 amg profile 的 `insider-trading-analyzer`（A 股董监高）功能互补——前者 A 股、后者美股。
 
+## VoltAgent/awesome-design-md（设计参考库，MIT）
+
+- **来源**：`https://github.com/VoltAgent/awesome-design-md`
+- **LICENSE**：MIT
+- **作者**：VoltAgent
+- **复制时间**：2026-08-17
+
+74 个网站的设计令牌（DESIGN.md），作为 `role/ui-designer/references/` 使用（**未进入 origin/**）：
+- 覆盖 SaaS / 工具、AI / 开发、金融、电商、汽车、消费电子、云基础设施
+- 完整 LICENSE 见 `role/ui-designer/LICENSE-VOLTAGENT.md`
+
+> 注：DESIGN.md 是纯文本设计系统（color tokens / typography / spacing / motion），不是流程性 skill，所以放在 role 的 references/ 而非 origin/。
+
 ## 后续维护
 
 - 如上游更新，从对应 git 仓库 `git pull` 后，将 skill 目录重新覆盖到 `origin/<name>/` 即可
